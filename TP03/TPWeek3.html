@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+    <style>
+        .profile-container {
+            display: flex;
+            gap: 20px; /* Memberi jarak antara foto dan video */
+        }
+        /* Membatasi ukuran foto dan video */
+        .foto img, .video video {
+            max-width: 100%;
+            height: auto;
+        }
+        .foto {
+            flex: 1; /* Membuat foto mengambil ruang */
+        }
+        .video {
+            flex: 1; /* Membuat video mengambil ruang */
+        }
+    </style>
+<body>
+    <header> <!---Bagian atas /dibagian navbar-->
+        <h1> Profile diri</h1>
+    </header>
+    <main-content>
+    <div class="profile-container"> <!-- div itu digunakan untuk membungkus satu kelompok elemen yang diinginkan-->
+        <div class="foto">
+            <h4>foto Profil</h4>
+            <img src="profil.jpeg" style="height: 200px; height: 300px;">
+        </div>
+        <div class="video">
+            <h4>Video Perkenalan singkat</h4>
+            <video width="200" controls>
+            <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+        <div class="about-me">
+            <h2>Tentang Saya</h2>
+            <p>Halo perkenalkan saya seorang pembelajar berkelanjutan,saya senang dengan teknologi terutama bidang UI & UX</p>
+        </div>
+        <div class="table">
+            <h2>Keterampilan</h2>
+            <table class="table-column1"> <!-- Membuat tabel-->
+                <tr><!--Baris tabel-->
+                    <th>Keterampilan</th><!--header tabel-->
+                    <th>Tingkat Kemahiran</th>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td><!--isi kolom tabel sesuai header masing-masing-->
+                    <td>Biasa aja</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Kurang Bisa</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Meragukan</td>
+                </tr>
+
+                
+            </table>
+            
+            <div class="contact">
+                <h1>Hubungi Saya</h1>
+                <form>
+                    <label for="fname">Nama:
+                        <input type="text" id="fname" name="fname"><br><!--digunakan untuk mengisi nama/email sesuai yg ditujukan-->
+                    </label>
+                    <label for="femail">Email:
+                        <input type="text" id="femail" name="email"><br>
+                    </label>
+                    <label for="pesan">Pesan:<br>
+                        <textarea name="pesan" id="pesan" style="height: 100px; width: 200px;"     onclick="this.value=''"></textarea><!--MEMBUAT KOTAK PESAN DAN UKURANNYA DITENTUKAN DENGAN MENGGUNAKAN STYLE-->
+                    </label>
+                    <br>
+                        <button type="submit">Kirim Pesan</button><!--TOMBOL KIRIM PESAN-->
+                </form>
+            </div>
+        </div>
+    </main-content>
+    <footer>
+        <h2>Media Sosial</h2>
+            <table class="social-media">
+                <tr>
+                    <td><a href="https://github.com/fauzanAltampani1" target="_blank">github |</a></td> <!--HREF ITU BUAT ELEMEN YG BISA MENGHUBUNGKAN DENGAN ELEMEN LAINNNYA-->
+                    <td><a href="https://www.instagram.com/_rfauzann_/" target="_blank">Instagram |</a></td>
+                    <td><a href="https://www.linkedin.com/in/rahmat-fauzan-37267b290/" target="_blank">linkedin</a></td>
+                </tr>
+            </table>
+    </footer>
+</body>
+</html>
